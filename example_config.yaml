@@ -1,0 +1,19 @@
+querier_chain: test-1
+eth_rpc: https://mainnet.infura.io/v3/<APIKEY>
+chains:
+  test-1:
+    key: default
+    chain-id: test-1
+    rpc-addr: http://localhost:26657
+    grpc-addr: http://localhost:9090
+    account-prefix: cosmos
+    keyring-backend: test
+    gas-adjustment: 1.5
+    gas-prices: 0.0001stake
+    min-gas-amount: 0
+    key-directory: ./cosmicrelayer/keys
+    debug: true
+    timeout: 20s
+    block-timeout: ""
+    output-format: json
+    sign-mode: direct
